@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diagnosis Result</title>
+</head>
+<body style="text-align:center; font-family:Arial">
+
+<h2>AI-Powered Explainable Melanoma Risk Assessment System with Uncertainty Estimation”</h2>
+
+<h3>Risk Score: {{ risk_score }}%</h3>
+<h3>Risk Category: {{ risk_category }}</h3>
+<h3>Uncertainty: {{ uncertainty }}</h3>
+<h3>Confidence: {{ confidence }}</h3>
+
+<h3>Original Image</h3>
+<img src="/{{ image_path }}" width="300">
+
+<h3>Grad-CAM Explainability</h3>
+<img src="/{{ gradcam_path }}" width="300">
+
+<br><br>
+<a href="/">Analyze Another Image</a>
+
+</body>
+</html>

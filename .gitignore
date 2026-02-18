@@ -1,0 +1,6 @@
+# Ignore only datasets
+archive/
+dataset/
+dataset_industry/
+isic_2020/
+isic_raw/
